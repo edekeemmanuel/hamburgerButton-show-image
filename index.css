@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins",sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    overflow: hidden;
+    padding-left: 70px;
+    padding-right: 150px;
+    padding-top: 10px;
+    background-image: linear-gradient(rgb(128, 98, 22), rgb(223, 32, 32), white);
+}
+
+div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    background-color: rgb(223, 32, 32);
+    border: black;
+    color: white;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 0.5rem;
+    font-size: 2rem;
+    margin-right: 44px;
+    transition: transform 0.5s ease-in-out;
+}
+
+button.activate {
+    transform: translateX(-100px);
+}
+
+nav {
+    background-color: rgb(223, 32, 32);
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    transform: translateX(100%);
+    padding: 1.5rem;
+    transition: transform 0.5s ease-in-out;
+}
+
+nav.activate {
+    transform: translateX(0);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    padding: 1rem 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* unvisited link */
+/* nav a:link {
+    color: white;
+} */
+
+/* visited link  
+nav a:visited {
+    color: white;
+}
+
+/* mouse over link */
+nav a:hover {
+    color: rgb(29, 27, 27);
+} */
+
+/* selected link */
+#active {
+    color: rgb(128, 98, 22);
+}
+
+@media only screen and (max-width: 320px) {
+    body {
+        padding-left: 20PX;
+    }
+
+    button {
+        margin-right: 35px;
+    }
+}
+
+@media only screen and (max-width: 385px) and (min-width: 320.1px) {
+   body {
+    padding-left: 40PX;
+   }
+}
+
+
